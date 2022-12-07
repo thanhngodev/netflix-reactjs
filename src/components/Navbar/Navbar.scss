@@ -1,0 +1,48 @@
+@import "../../variable.scss";
+
+.nav {
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+
+  &_black {
+    background-color: $black;
+  }
+
+  &_contents {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_logo {
+    position: fixed;
+    left: 0;
+    width: 80px;
+    object-fit: contain;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  &_logo:hover {
+    transform: scale(1.1);
+  }
+
+  &_avatar {
+    position: fixed;
+    right: 20px;
+    width: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  &_avatar:hover {
+    transform: scale(1.1);
+  }
+}
